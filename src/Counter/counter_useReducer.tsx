@@ -17,7 +17,12 @@ export function Counter_useReducer() {
   return (
     <>
       <h3>{state}</h3>
-      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button
+        onClick={() => dispatch({ type: "increment" })}
+        className="border"
+      >
+        +
+      </button>
       <button onClick={() => dispatch({ type: "reset" })}>reset</button>
       <button onClick={() => dispatch({ type: "decrement" })}>-</button>
     </>
