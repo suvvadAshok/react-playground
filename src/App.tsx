@@ -8,7 +8,7 @@ import {
   withAuthenticator,
 } from "@aws-amplify/ui-react";
 
-function App({ signOut }: { signOut: any }) {
+function App({ signOut }: { signOut: () => void }) {
   return (
     <View className="App">
       <Card>
